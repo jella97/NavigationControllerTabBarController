@@ -1,19 +1,18 @@
 //
-//  FirstViewController.m
-//  test
+//  ThirdViewController.m
+//  TabAndNav
 //
 //  Created by Youwei Teng on 8/21/13.
 //  Copyright (c) 2013 Youwei Teng. All rights reserved.
 //
 
-#import "FirstViewController.h"
 #import "ThirdViewController.h"
 
-@interface FirstViewController ()
+@interface ThirdViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation ThirdViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,10 +34,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)goToThird:(id)sender {
-    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
-    [self.navigationController pushViewController:thirdVC animated:YES];
-}
-
 
 @end

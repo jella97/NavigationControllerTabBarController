@@ -21,6 +21,8 @@
 		89ABEBB217C3DAD300F0BF51 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ABEBB017C3DAD300F0BF51 /* FirstViewController.m */; };
 		89ABEBB317C3DAD300F0BF51 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89ABEBB117C3DAD300F0BF51 /* FirstViewController.xib */; };
 		89ABEBB517C3DBA800F0BF51 /* MainWindows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89ABEBB417C3DBA800F0BF51 /* MainWindows.xib */; };
+		89ABEBB917C3E2FE00F0BF51 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ABEBB717C3E2FE00F0BF51 /* ThirdViewController.m */; };
+		89ABEBBA17C3E2FE00F0BF51 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89ABEBB817C3E2FE00F0BF51 /* ThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,9 @@
 		89ABEBB017C3DAD300F0BF51 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		89ABEBB117C3DAD300F0BF51 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		89ABEBB417C3DBA800F0BF51 /* MainWindows.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindows.xib; sourceTree = "<group>"; };
+		89ABEBB617C3E2FE00F0BF51 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		89ABEBB717C3E2FE00F0BF51 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		89ABEBB817C3E2FE00F0BF51 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +101,13 @@
 				89ABEBAB17C3DAB700F0BF51 /* SecondViewController.m */,
 				89ABEBAF17C3DAD300F0BF51 /* FirstViewController.h */,
 				89ABEBB017C3DAD300F0BF51 /* FirstViewController.m */,
+				89ABEBB617C3E2FE00F0BF51 /* ThirdViewController.h */,
+				89ABEBB717C3E2FE00F0BF51 /* ThirdViewController.m */,
 				89ABEB9417C3DA5200F0BF51 /* Supporting Files */,
 				89ABEBB417C3DBA800F0BF51 /* MainWindows.xib */,
 				89ABEBB117C3DAD300F0BF51 /* FirstViewController.xib */,
 				89ABEBAC17C3DAB700F0BF51 /* SecondViewController.xib */,
+				89ABEBB817C3E2FE00F0BF51 /* ThirdViewController.xib */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 				89ABEBAE17C3DAB700F0BF51 /* SecondViewController.xib in Resources */,
 				89ABEBB317C3DAD300F0BF51 /* FirstViewController.xib in Resources */,
 				89ABEBB517C3DBA800F0BF51 /* MainWindows.xib in Resources */,
+				89ABEBBA17C3E2FE00F0BF51 /* ThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +199,7 @@
 				89ABEB9E17C3DA5200F0BF51 /* AppDelegate.m in Sources */,
 				89ABEBAD17C3DAB700F0BF51 /* SecondViewController.m in Sources */,
 				89ABEBB217C3DAD300F0BF51 /* FirstViewController.m in Sources */,
+				89ABEBB917C3E2FE00F0BF51 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
