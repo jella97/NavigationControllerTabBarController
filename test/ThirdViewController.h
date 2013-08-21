@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ThirdViewController : UIViewController{
-    UILabel *position;
     NSString *text;
 }
-@property (weak, nonatomic) IBOutlet UILabel *Label;
 
-@property (nonatomic, retain) UILabel *myLabel;
-@property (nonatomic, retain) NSString *myString;
+
+@property (weak, nonatomic) IBOutlet UILabel *position;
+@property (nonatomic, retain) NSString *text;
 
 @end

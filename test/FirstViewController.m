@@ -35,7 +35,6 @@ NSInteger MODE = 0;
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (MyCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     MyCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    NSLog(@"cellForItemAtIndexPath");
     return cell;
 }
 
@@ -43,13 +42,11 @@ NSInteger MODE = 0;
     //    MyCell *cell = (MyCell*)[collectionView cellForItemAtIndexPath:indexPath];
     //NSArray *views = [cell.contentView subviews]; //not use right now
     
-    ThirdViewController *thirdVC = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
+    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
     thirdVC.hidesBottomBarWhenPushed = YES; // hide the tab bar
-    thirdVC.myString = @"Hi";
+    thirdVC.text = [NSString stringWithFormat:@"position %d",indexPath.row];
     [self.navigationController pushViewController:thirdVC animated:YES];
     //[self performSegueWithIdentifier:(@"doFuck") sender:self]; //only for story board, so i use properties to pass values  =v=
-    
-    NSLog(@"%d",indexPath.row);
 }
 
 - (void)viewDidLoad
@@ -127,14 +124,11 @@ NSInteger MODE = 0;
 -(void)setUpSegment{
     NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"IMAGE",@"PDF",nil];
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
-    
     segmentedControl.frame = CGRectMake(0,0, 320.0, 56.0);
     segmentedControl.selectedSegmentIndex = 0;
     segmentedControl.tintColor = [UIColor blackColor];
     segmentedControl.segmentedControlStyle = 7;
-    
     [segmentedControl addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
-    
     [self.view addSubview:segmentedControl];
 }
 
