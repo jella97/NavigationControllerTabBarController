@@ -121,7 +121,7 @@ NSInteger TEST_ARRAY = 30;
 }
 
 -(void)setUpSegment{
-    NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"IMAGE",@"PDF",nil];
+    NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"Hello",@"World",nil];
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
     segmentedControl.frame = CGRectMake(0,0, 320.0, 56.0);
     segmentedControl.selectedSegmentIndex = 0;

@@ -7,12 +7,19 @@
 //
 
 #import "SecondViewController.h"
-
+#import "ThirdViewController.h"
 @interface SecondViewController ()
 
 @end
 
 @implementation SecondViewController
+- (IBAction)go:(UIButton *)sender {
+    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
+    //thirdVC.hidesBottomBarWhenPushed = YES; // hide the tab bar
+    thirdVC.text = @"from tab 2";
+    [self.navigationController pushViewController:thirdVC animated:YES];
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
