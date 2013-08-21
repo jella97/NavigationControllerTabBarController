@@ -12,6 +12,7 @@
 
 UISegmentedControl *segmentedControl;
 NSInteger MODE = 0;
+NSInteger TEST_ARRAY = 30;
 @interface FirstViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
@@ -29,7 +30,7 @@ NSInteger MODE = 0;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 30;
+    return TEST_ARRAY;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
@@ -39,13 +40,18 @@ NSInteger MODE = 0;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSArray* itemPaths = [self.myCollectionView indexPathsForSelectedItems];
     //    MyCell *cell = (MyCell*)[collectionView cellForItemAtIndexPath:indexPath];
     //NSArray *views = [cell.contentView subviews]; //not use right now
-    
-    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
-    thirdVC.hidesBottomBarWhenPushed = YES; // hide the tab bar
-    thirdVC.text = [NSString stringWithFormat:@"position %d",indexPath.row];
-    [self.navigationController pushViewController:thirdVC animated:YES];
+    if (self.editing) {
+        TEST_ARRAY-=1;
+        [self.myCollectionView deleteItemsAtIndexPaths:itemPaths];
+    }else{
+        ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
+        thirdVC.hidesBottomBarWhenPushed = YES; // hide the tab bar
+        thirdVC.text = [NSString stringWithFormat:@"position %d",indexPath.row];
+        [self.navigationController pushViewController:thirdVC animated:YES];
+    }
     //[self performSegueWithIdentifier:(@"doFuck") sender:self]; //only for story board, so i use properties to pass values  =v=
 }
 
@@ -67,12 +73,6 @@ NSInteger MODE = 0;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)goToThird:(id)sender {
-    // FIXME: tswe
-    
-    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
-    [self.navigationController pushViewController:thirdVC animated:YES];
-}
 
 -(void)segmentAction:(UISegmentedControl *)sender {
     
@@ -91,7 +91,6 @@ NSInteger MODE = 0;
     MODE = [sender selectedSegmentIndex];
     NSLog(@"%d",[sender selectedSegmentIndex]);
     [[self myCollectionView] reloadData];
-    //reload collection View here
     
 }
 
