@@ -122,8 +122,6 @@
 		89ABEB8117C3DA5100F0BF51 = {
 			isa = PBXGroup;
 			children = (
-				89ABEBF117C48A0200F0BF51 /* ImageIO.framework */,
-				89ABEBEF17C489FC00F0BF51 /* MapKit.framework */,
 				89ABEB9317C3DA5200F0BF51 /* test */,
 				89ABEB8C17C3DA5100F0BF51 /* Frameworks */,
 				89ABEB8B17C3DA5100F0BF51 /* Products */,
@@ -141,6 +139,8 @@
 		89ABEB8C17C3DA5100F0BF51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89ABEBF117C48A0200F0BF51 /* ImageIO.framework */,
+				89ABEBEF17C489FC00F0BF51 /* MapKit.framework */,
 				89ABEB8D17C3DA5100F0BF51 /* UIKit.framework */,
 				89ABEB8F17C3DA5100F0BF51 /* Foundation.framework */,
 				89ABEB9117C3DA5200F0BF51 /* CoreGraphics.framework */,

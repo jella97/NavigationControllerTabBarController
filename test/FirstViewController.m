@@ -145,15 +145,16 @@ NSMutableArray *imagesThumbs;
 }
 
 -(void)setUpSegment{
+    
     NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"Hello",@"World",nil];
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
     segmentedControl.frame = CGRectMake(0,0, 320.0, 56.0);
     segmentedControl.selectedSegmentIndex = 0;
     segmentedControl.tintColor = [UIColor blackColor];
     segmentedControl.segmentedControlStyle = 7;
-
     [segmentedControl addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:segmentedControl];
+    
 }
 
 /**
