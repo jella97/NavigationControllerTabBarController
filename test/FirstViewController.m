@@ -22,7 +22,7 @@ NSMutableArray *imagesThumbs;
 @end
 
 @implementation FirstViewController
-
+@synthesize segment;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -49,6 +49,7 @@ NSMutableArray *imagesThumbs;
         MyCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
         [cell.image setImageWithURL:[NSURL URLWithString:[imagesThumbs objectAtIndex:indexPath.row]]
                    placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+        
         return cell;
     }
     else
@@ -134,8 +135,13 @@ NSMutableArray *imagesThumbs;
     
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
+    CGFloat screenHeight = screenRect.size.height;
+
+    
     screenWidth = (screenWidth-6)/3;
+
     return CGSizeMake(screenWidth, screenWidth);
+    
 }
 
 -(void)setUpSegment{
@@ -145,6 +151,7 @@ NSMutableArray *imagesThumbs;
     segmentedControl.selectedSegmentIndex = 0;
     segmentedControl.tintColor = [UIColor blackColor];
     segmentedControl.segmentedControlStyle = 7;
+
     [segmentedControl addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:segmentedControl];
 }
