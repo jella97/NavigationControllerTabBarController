@@ -17,7 +17,6 @@ NSInteger TEST_ARRAY = 30;
 NSMutableArray *images;
 NSMutableArray *imagesThumbs;
 @interface FirstViewController ()
-@property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
 @end
 

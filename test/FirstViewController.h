@@ -10,6 +10,8 @@
 #import "MyCell.h"
 
 @interface FirstViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
+@property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
 @end
