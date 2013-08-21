@@ -25,7 +25,10 @@
 
 - (void)viewDidLoad
 {
+
     [super viewDidLoad];
+    position.text = text;
+    NSLog(@"%@",text);
     // Do any additional setup after loading the view from its nib.
 }
 

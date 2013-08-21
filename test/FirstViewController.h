@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyCell.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UIButton *goToThird;
 
 @end

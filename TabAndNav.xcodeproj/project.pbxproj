@@ -23,6 +23,8 @@
 		89ABEBB517C3DBA800F0BF51 /* MainWindows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89ABEBB417C3DBA800F0BF51 /* MainWindows.xib */; };
 		89ABEBB917C3E2FE00F0BF51 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ABEBB717C3E2FE00F0BF51 /* ThirdViewController.m */; };
 		89ABEBBA17C3E2FE00F0BF51 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89ABEBB817C3E2FE00F0BF51 /* ThirdViewController.xib */; };
+		89ABEBC017C3E81100F0BF51 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ABEBBF17C3E81100F0BF51 /* MyCell.m */; };
+		89ABEBC217C3E86C00F0BF51 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89ABEBC117C3E86B00F0BF51 /* MyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,9 @@
 		89ABEBB617C3E2FE00F0BF51 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		89ABEBB717C3E2FE00F0BF51 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		89ABEBB817C3E2FE00F0BF51 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		89ABEBBE17C3E81100F0BF51 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		89ABEBBF17C3E81100F0BF51 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		89ABEBC117C3E86B00F0BF51 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,9 @@
 				89ABEBB117C3DAD300F0BF51 /* FirstViewController.xib */,
 				89ABEBAC17C3DAB700F0BF51 /* SecondViewController.xib */,
 				89ABEBB817C3E2FE00F0BF51 /* ThirdViewController.xib */,
+				89ABEBBE17C3E81100F0BF51 /* MyCell.h */,
+				89ABEBBF17C3E81100F0BF51 /* MyCell.m */,
+				89ABEBC117C3E86B00F0BF51 /* MyCell.xib */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 				89ABEBB317C3DAD300F0BF51 /* FirstViewController.xib in Resources */,
 				89ABEBB517C3DBA800F0BF51 /* MainWindows.xib in Resources */,
 				89ABEBBA17C3E2FE00F0BF51 /* ThirdViewController.xib in Resources */,
+				89ABEBC217C3E86C00F0BF51 /* MyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +209,7 @@
 				89ABEBAD17C3DAB700F0BF51 /* SecondViewController.m in Sources */,
 				89ABEBB217C3DAD300F0BF51 /* FirstViewController.m in Sources */,
 				89ABEBB917C3E2FE00F0BF51 /* ThirdViewController.m in Sources */,
+				89ABEBC017C3E81100F0BF51 /* MyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
