@@ -108,14 +108,14 @@
 				89ABEBB017C3DAD300F0BF51 /* FirstViewController.m */,
 				89ABEBB617C3E2FE00F0BF51 /* ThirdViewController.h */,
 				89ABEBB717C3E2FE00F0BF51 /* ThirdViewController.m */,
-				89ABEB9417C3DA5200F0BF51 /* Supporting Files */,
+				89ABEBBE17C3E81100F0BF51 /* MyCell.h */,
+				89ABEBBF17C3E81100F0BF51 /* MyCell.m */,
 				89ABEBB417C3DBA800F0BF51 /* MainWindows.xib */,
 				89ABEBB117C3DAD300F0BF51 /* FirstViewController.xib */,
 				89ABEBAC17C3DAB700F0BF51 /* SecondViewController.xib */,
 				89ABEBB817C3E2FE00F0BF51 /* ThirdViewController.xib */,
-				89ABEBBE17C3E81100F0BF51 /* MyCell.h */,
-				89ABEBBF17C3E81100F0BF51 /* MyCell.m */,
 				89ABEBC117C3E86B00F0BF51 /* MyCell.xib */,
+				89ABEB9417C3DA5200F0BF51 /* Supporting Files */,
 			);
 			path = test;
 			sourceTree = "<group>";
