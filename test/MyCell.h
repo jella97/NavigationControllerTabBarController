@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MyCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 
 @end

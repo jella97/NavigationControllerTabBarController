@@ -4,16 +4,18 @@
 //
 //  Created by Youwei Teng on 8/21/13.
 //  Copyright (c) 2013 Youwei Teng. All rights reserved.
-//
+//  this is use for show pass values!!
 
 #import "ThirdViewController.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 
 @interface ThirdViewController ()
 
 @end
 
 @implementation ThirdViewController
-@synthesize position,text;
+
+@synthesize position,text,bigImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +30,7 @@
 {
     [super viewDidLoad];
     position.text = text;
+    [bigImage setImageWithURL:text];
     
 }
 
